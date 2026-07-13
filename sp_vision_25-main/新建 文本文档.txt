@@ -1,0 +1,15 @@
+# 1. 创建并进入独立的测试编译目录
+mkdir -p build_minimal && cd build_minimal
+
+# 2. 执行 CMake 配置（注意：这里要显式指定使用哪个 CMakeLists）
+# 如果你的 OpenVINO 安装路径不同，请把下面的路径改掉
+cmake -DCMAKE_BUILD_TYPE=Release \
+      -DOpenVINO_DIR=/opt/intel/openvino_2024.6.0/runtime/cmake/ \
+      -DCMAKE_PROJECT_INCLUDE=../CMakeLists_minimal.txt \
+      .. 
+
+# 3. 开始编译
+make -j4
+./minimal_test
+
+./minimal_test 1

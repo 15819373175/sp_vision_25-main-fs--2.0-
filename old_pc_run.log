@@ -1,0 +1,879 @@
+[2026-05-31 19:08:12.273] [info] [Gimbal] Serial initialized and read thread started.
+[2026-05-31 19:08:12.273] [info] [Gimbal] read_thread started.
+[2026-05-31 19:08:12.274] [info] HikRobot's daemon thread started.
+[2026-05-31 19:08:12.594] [info] HikRobot's capture thread started.
+[2026-05-31 19:08:12.728] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:12.747] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:12.761] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:12.800] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:12.828] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:12.872] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:12.899] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:12.928] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:12.963] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:12.993] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.025] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.061] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.096] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.137] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.160] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.203] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.229] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.269] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.301] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.334] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.371] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.400] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.436] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.469] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.494] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.538] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.564] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.607] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.627] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.673] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.696] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.738] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.764] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.802] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.829] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.869] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.900] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.935] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:13.970] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.006] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.033] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.071] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.094] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.134] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.165] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.197] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.227] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.272] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.306] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.332] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.364] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.405] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.437] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.472] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.497] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.537] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.571] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.599] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.638] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.664] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.699] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.736] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.771] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.801] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.836] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.871] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.896] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.40° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.935] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.40° yaw_vel=0.00°/s pitch=-0.89° pitch_vel=0.00°/s
+[2026-05-31 19:08:14.970] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.40° yaw_vel=0.00°/s pitch=-0.86° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.005] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.40° yaw_vel=0.00°/s pitch=-0.81° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.034] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=-0.76° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.066] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=-0.71° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.103] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.66° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.127] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=-0.63° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.170] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.58° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.196] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.54° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.233] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.50° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.264] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.48° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.301] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.33° yaw_vel=0.00°/s pitch=-0.45° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.331] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.33° yaw_vel=0.00°/s pitch=-0.42° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.366] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.33° yaw_vel=0.00°/s pitch=-0.41° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.398] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.33° yaw_vel=0.00°/s pitch=-0.41° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.426] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.33° yaw_vel=0.00°/s pitch=-0.41° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.471] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.33° yaw_vel=0.00°/s pitch=-0.42° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.494] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.33° yaw_vel=0.00°/s pitch=-0.43° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.534] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.33° yaw_vel=0.00°/s pitch=-0.45° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.567] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.33° yaw_vel=0.00°/s pitch=-0.47° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.597] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.33° yaw_vel=0.00°/s pitch=-0.50° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.630] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.33° yaw_vel=0.00°/s pitch=-0.53° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.659] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.33° yaw_vel=0.00°/s pitch=-0.57° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.698] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.63° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.732] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.69° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.764] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.75° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.795] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.80° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.832] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.86° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.862] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.903] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.92° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.928] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.92° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.966] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:15.998] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.92° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.033] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.92° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.063] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.104] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.134] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.92° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.169] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.92° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.199] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.92° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.231] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.92° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.267] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.92° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.298] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.92° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.333] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.92° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.367] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.399] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.433] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.473] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.493] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.533] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.566] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.600] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.92° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.628] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.92° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.667] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.92° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.703] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.93° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.732] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.93° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.768] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.93° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.802] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.93° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.828] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.93° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.865] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.93° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.903] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.93° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.929] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.93° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.967] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:16.999] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.026] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.073] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.098] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.135] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.163] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.202] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.236] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.262] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.304] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.329] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.360] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.402] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.432] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.466] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.498] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.530] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.568] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.593] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.628] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.671] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.700] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.739] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.765] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.793] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.839] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.864] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.904] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.926] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.971] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.94° pitch_vel=0.00°/s
+[2026-05-31 19:08:17.993] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.93° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.037] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.93° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.062] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.93° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.101] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.93° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.130] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.92° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.167] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.199] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.232] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.89° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.267] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.86° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.299] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=-0.84° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.336] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=-0.80° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.369] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=-0.74° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.395] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=-0.69° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.433] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=-0.61° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.465] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=-0.54° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.504] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=-0.46° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.528] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=-0.42° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.564] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=-0.38° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.604] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.31° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.629] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=-0.29° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.675] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.33° yaw_vel=0.00°/s pitch=-0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.699] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.32° yaw_vel=0.00°/s pitch=-0.17° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.736] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.30° yaw_vel=0.00°/s pitch=-0.12° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.762] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.29° yaw_vel=0.00°/s pitch=-0.09° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.801] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.28° yaw_vel=0.00°/s pitch=-0.06° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.839] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.27° yaw_vel=0.00°/s pitch=-0.02° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.866] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.00° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.902] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.03° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.928] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.05° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.967] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.07° pitch_vel=0.00°/s
+[2026-05-31 19:08:18.996] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.23° yaw_vel=0.00°/s pitch=0.08° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.032] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.22° yaw_vel=0.00°/s pitch=0.11° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.069] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.22° yaw_vel=0.00°/s pitch=0.12° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.101] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.21° yaw_vel=0.00°/s pitch=0.13° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.138] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.21° yaw_vel=0.00°/s pitch=0.14° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.169] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.21° yaw_vel=0.00°/s pitch=0.15° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.205] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.21° yaw_vel=0.00°/s pitch=0.16° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.237] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.21° yaw_vel=0.00°/s pitch=0.17° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.274] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.21° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.299] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.21° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.326] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.20° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.370] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.21° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.394] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.21° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.429] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.21° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.472] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.21° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.502] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.22° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.537] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.22° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.562] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.23° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.594] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.23° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.635] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.663] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.701] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.728] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.772] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.795] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.836] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.23° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.867] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.23° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.901] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.23° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.933] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:19.968] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.008] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.027] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.065] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.094] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.131] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.162] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.198] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.230] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.261] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.307] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.329] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.363] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.406] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.427] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.475] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.497] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.528] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.573] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.594] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.636] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.664] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.702] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.727] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.759] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.792] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.827] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.869] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.900] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.932] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:20.969] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.002] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.028] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.062] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.096] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.137] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.162] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.200] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.232] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.265] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.301] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.333] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.366] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.400] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.436] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.473] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.502] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.535] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.564] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.606] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.633] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.671] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.704] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.732] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.773] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.798] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.17° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.836] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.16° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.865] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.16° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.897] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.15° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.934] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.15° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.974] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.15° pitch_vel=0.00°/s
+[2026-05-31 19:08:21.997] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.14° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.036] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.23° yaw_vel=0.00°/s pitch=0.14° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.061] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.23° yaw_vel=0.00°/s pitch=0.14° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.104] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.23° yaw_vel=0.00°/s pitch=0.13° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.127] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.23° yaw_vel=0.00°/s pitch=0.13° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.165] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.23° yaw_vel=0.00°/s pitch=0.13° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.204] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.23° yaw_vel=0.00°/s pitch=0.13° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.232] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.23° yaw_vel=0.00°/s pitch=0.14° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.267] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.14° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.302] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.14° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.339] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.14° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.367] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.14° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.396] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.14° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.440] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.14° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.462] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.14° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.501] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.15° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.533] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.15° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.572] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.15° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.599] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.24° yaw_vel=0.00°/s pitch=0.15° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.634] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.15° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.672] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.25° yaw_vel=0.00°/s pitch=0.15° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.701] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.16° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.738] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.16° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.768] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.17° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.801] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.838] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.862] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.905] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.938] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.968] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.24° pitch_vel=0.00°/s
+[2026-05-31 19:08:22.998] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.24° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.036] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.25° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.066] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.25° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.102] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.25° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.139] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.25° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.163] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.25° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.201] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.24° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.233] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.24° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.273] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.26° yaw_vel=0.00°/s pitch=0.24° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.296] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.27° yaw_vel=0.00°/s pitch=0.24° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.340] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.27° yaw_vel=0.00°/s pitch=0.24° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.367] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.27° yaw_vel=0.00°/s pitch=0.24° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.403] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.27° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.432] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.27° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.461] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.27° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.504] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.27° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.534] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.27° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.572] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.28° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.599] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.28° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.640] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.29° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.669] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.31° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.708] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.32° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.734] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.33° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.772] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.34° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.800] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.837] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.866] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.905] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.938] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:23.967] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.005] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.032] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.069] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.103] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.130] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.164] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.199] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.230] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.263] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.299] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.328] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.24° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.363] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.25° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.405] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.430] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.468] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.506] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.534] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.570] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.603] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.636] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.670] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.703] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.742] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.762] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.806] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.840] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.869] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.907] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.933] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:24.974] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.000] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.26° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.041] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.26° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.064] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.26° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.105] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.25° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.137] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.25° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.236] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.24° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.356] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.382] [warning] [Tracker] Large dt: 0.100s
+[2026-05-31 19:08:25.383] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.401] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.435] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.471] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.501] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.539] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.571] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.602] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.631] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.665] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.709] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.736] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.769] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.806] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.844] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.865] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.898] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.936] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:25.964] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.35° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.002] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.037] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.063] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.107] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.136] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.171] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.209] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.231] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.270] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.299] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.337] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.360] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.401] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.433] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.473] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.496] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.536] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.573] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.598] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.634] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.667] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.706] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.735] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.769] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.804] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.832] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.872] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.896] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.941] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:26.964] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.007] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.034] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.065] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.109] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.132] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.174] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.199] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.238] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.267] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.309] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.330] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.372] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.403] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.433] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.473] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.503] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.541] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.562] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.604] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.633] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.667] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.705] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.734] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.774] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.799] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.840] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.868] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.901] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.940] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:27.962] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.002] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.032] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.065] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.101] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.136] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.166] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.203] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.237] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.263] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.309] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.328] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.372] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.398] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.441] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.466] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.507] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.529] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.573] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.601] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.637] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.665] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.702] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.733] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.773] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.800] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.835] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.867] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.908] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.928] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:28.975] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.002] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.031] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.067] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.097] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.143] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.170] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.203] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.236] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.274] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.301] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.336] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.367] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.17° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.401] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.17° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.432] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.17° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.469] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.17° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.507] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.528] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.571] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.601] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.640] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.664] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.704] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.742] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.777] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.797] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.840] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.40° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.869] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.902] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.937] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:29.970] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.007] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.25° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.030] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.26° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.075] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.096] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.138] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.29° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.167] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.29° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.207] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.30° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.228] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.30° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.267] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.31° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.303] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.31° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.338] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.32° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.364] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.32° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.408] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.32° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.435] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.31° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.467] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.31° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.502] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.30° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.541] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.30° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.572] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.30° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.606] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.30° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.639] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.30° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.670] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.30° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.703] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.30° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.739] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.30° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.762] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.30° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.806] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.29° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.840] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.29° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.862] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.29° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.904] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.29° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.934] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.29° pitch_vel=0.00°/s
+[2026-05-31 19:08:30.975] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.29° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.002] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.36° yaw_vel=0.00°/s pitch=0.29° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.041] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.29° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.063] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.29° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.103] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.137] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.177] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.204] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.235] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.268] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.310] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.333] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.372] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.395] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.436] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.470] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.28° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.505] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.534] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.571] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.600] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.642] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.667] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.706] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.735] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.772] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.803] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.837] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.871] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.904] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.939] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:31.975] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.002] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.041] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.067] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.105] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.130] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.27° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.175] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.26° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.200] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.26° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.239] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.26° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.265] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.26° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.309] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.26° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.329] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.26° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.371] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.26° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.404] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.26° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.438] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.25° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.473] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.25° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.501] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.24° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.540] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.24° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.567] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.600] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.637] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.668] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.704] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.737] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.767] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.807] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.834] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.867] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.901] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.941] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:32.968] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.23° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.005] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.034] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.073] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.101] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.134] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.174] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.207] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.22° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.237] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.268] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.302] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.337] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.366] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.409] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.433] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.470] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.501] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.536] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.569] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.606] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.635] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.672] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.708] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.37° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.738] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.768] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.807] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.833] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.871] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.901] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.944] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:33.967] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.004] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.032] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.068] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.099] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.135] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.173] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.204] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.38° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.240] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.263] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.308] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.21° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.335] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.378] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.407] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.433] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.467] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.500] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.529] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.569] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.604] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.636] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.675] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.698] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.738] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.767] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.805] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.834] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.867] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.909] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.940] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:34.976] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.003] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.043] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.064] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.108] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.139] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.162] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.203] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.20° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.234] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.19° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.275] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.297] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.18° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.337] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.16° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.363] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.15° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.404] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.12° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.439] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.08° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.472] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.04° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.496] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=0.00° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.541] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=-0.10° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.566] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.40° yaw_vel=0.00°/s pitch=-0.16° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.606] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.40° yaw_vel=0.00°/s pitch=-0.24° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.640] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.40° yaw_vel=0.00°/s pitch=-0.31° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.676] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.40° yaw_vel=0.00°/s pitch=-0.40° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.700] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=-0.45° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.742] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.39° yaw_vel=0.00°/s pitch=-0.53° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.767] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.40° yaw_vel=0.00°/s pitch=-0.58° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.804] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.40° yaw_vel=0.00°/s pitch=-0.65° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.838] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.40° yaw_vel=0.00°/s pitch=-0.70° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.869] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.41° yaw_vel=0.00°/s pitch=-0.75° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.906] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.41° yaw_vel=0.00°/s pitch=-0.80° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.931] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.42° yaw_vel=0.00°/s pitch=-0.83° pitch_vel=0.00°/s
+[2026-05-31 19:08:35.975] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.43° yaw_vel=0.00°/s pitch=-0.87° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.003] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.43° yaw_vel=0.00°/s pitch=-0.89° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.039] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.072] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.105] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.138] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.43° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.169] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.43° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.206] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.43° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.236] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.272] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.301] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.338] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.370] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.404] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.436] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.468] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.509] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.539] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.570] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.602] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.632] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.674] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.698] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.739] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.771] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.808] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.839] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.870] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.906] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.935] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:36.971] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.003] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.035] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.071] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.101] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.139] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.164] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.208] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.241] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.269] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.309] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.339] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.374] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.404] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.435] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.470] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.504] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.536] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.566] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.601] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.635] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.670] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.700] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.742] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.772] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.808] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.831] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.876] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.905] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.933] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:37.973] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.003] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.041] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.067] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.108] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.133] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.176] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.204] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.240] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.265] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.305] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.331] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.375] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.407] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.436] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.475] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.508] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.541] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.566] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.606] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.638] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.668] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.705] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.734] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.772] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.809] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.835] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.871] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.903] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.934] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:38.971] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.006] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.040] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.069] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.099] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.140] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.168] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.202] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.239] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.272] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.303] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.339] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.372] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.402] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.440] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.478] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.501] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.531] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.568] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.600] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.628] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.673] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.701] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.743] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.775] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.806] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.837] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.874] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.903] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.940] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:39.971] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.007] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.038] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.070] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.107] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.139] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.168] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.203] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.238] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.276] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.295] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.341] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.362] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.410] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.431] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.477] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.503] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.534] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.566] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.606] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.634] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.667] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.702] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.742] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.765] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.809] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.837] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.877] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.896] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.941] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:40.971] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.003] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.44° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.033] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.063] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.102] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.140] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.169] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.206] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.232] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.263] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.307] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.330] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.374] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.403] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.433] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.475] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.504] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.540] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.90° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.570] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.45° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.605] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.643] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.676] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.707] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.741] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.774] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.805] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.841] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.867] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.906] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s
+[2026-05-31 19:08:41.937] [info] [auto_aim_debug_mpc.cpp:141] IMU: yaw=0.46° yaw_vel=0.00°/s pitch=-0.91° pitch_vel=0.00°/s

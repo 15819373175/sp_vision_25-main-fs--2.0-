@@ -1,0 +1,109 @@
+Consolidate compiler generated dependencies of target serial
+Consolidate compiler generated dependencies of target tinympcstatic
+[  3%] Built target serial
+[  8%] Built target tinympcstatic
+Consolidate compiler generated dependencies of target omniperception
+Consolidate compiler generated dependencies of target tools
+[ 10%] Built target omniperception
+[ 19%] Built target tools
+Consolidate compiler generated dependencies of target io
+[ 20%] Building CXX object io/CMakeFiles/io.dir/gimbal/gimbal.cpp.o
+[ 20%] Linking CXX static library libio.a
+[ 26%] Built target io
+Consolidate compiler generated dependencies of target gimbal_test
+[ 27%] Linking CXX executable gimbal_test
+Consolidate compiler generated dependencies of target auto_aim
+[ 41%] Built target auto_aim
+Consolidate compiler generated dependencies of target gimbal_response_test
+[ 42%] Linking CXX executable gimbal_response_test
+[ 43%] Built target gimbal_test
+Consolidate compiler generated dependencies of target cboard_test
+[ 44%] Linking CXX executable cboard_test
+[ 45%] Built target gimbal_response_test
+Consolidate compiler generated dependencies of target camera_test
+[ 46%] Linking CXX executable camera_test
+[ 47%] Built target cboard_test
+Consolidate compiler generated dependencies of target camera_thread_test
+[ 48%] Linking CXX executable camera_thread_test
+[ 48%] Built target camera_test
+Consolidate compiler generated dependencies of target usbcamera_test
+[ 49%] Linking CXX executable usbcamera_test
+[ 50%] Built target usbcamera_test
+Consolidate compiler generated dependencies of target auto_aim_test
+[ 51%] Linking CXX executable auto_aim_test
+[ 52%] Built target camera_thread_test
+Consolidate compiler generated dependencies of target planner_test
+[ 53%] Linking CXX executable planner_test
+[ 54%] Built target auto_aim_test
+Consolidate compiler generated dependencies of target planner_test_offline
+[ 55%] Linking CXX executable planner_test_offline
+[ 56%] Built target planner_test
+Consolidate compiler generated dependencies of target dm_test
+[ 57%] Linking CXX executable dm_test
+[ 58%] Built target planner_test_offline
+Consolidate compiler generated dependencies of target handeye_test
+[ 58%] Linking CXX executable handeye_test
+[ 59%] Built target dm_test
+Consolidate compiler generated dependencies of target camera_detect_test
+[ 60%] Linking CXX executable camera_detect_test
+[ 61%] Built target handeye_test
+Consolidate compiler generated dependencies of target usbcamera_detect_test
+[ 62%] Linking CXX executable usbcamera_detect_test
+[ 63%] Built target camera_detect_test
+Consolidate compiler generated dependencies of target detector_video_test
+[ 64%] Linking CXX executable detector_video_test
+[ 65%] Built target usbcamera_detect_test
+Consolidate compiler generated dependencies of target multi_usbcamera_test
+[ 65%] Linking CXX executable multi_usbcamera_test
+[ 65%] Built target detector_video_test
+Consolidate compiler generated dependencies of target minimum_vision_system
+[ 66%] Linking CXX executable minimum_vision_system
+[ 67%] Built target multi_usbcamera_test
+Consolidate compiler generated dependencies of target calibrate_camera
+[ 68%] Linking CXX executable calibrate_camera
+[ 69%] Built target minimum_vision_system
+Consolidate compiler generated dependencies of target calibrate_handeye
+[ 70%] Linking CXX executable calibrate_handeye
+[ 70%] Built target calibrate_camera
+Consolidate compiler generated dependencies of target calibrate_robotworld_handeye
+[ 71%] Linking CXX executable calibrate_robotworld_handeye
+[ 72%] Built target calibrate_handeye
+Consolidate compiler generated dependencies of target capture
+[ 73%] Linking CXX executable capture
+[ 74%] Built target calibrate_robotworld_handeye
+Consolidate compiler generated dependencies of target split_video
+[ 75%] Linking CXX executable split_video
+[ 76%] Built target split_video
+Consolidate compiler generated dependencies of target auto_buff
+[ 81%] Built target auto_buff
+Consolidate compiler generated dependencies of target standard
+[ 82%] Linking CXX executable standard
+[ 83%] Built target capture
+Consolidate compiler generated dependencies of target auto_aim_debug_mpc
+[ 84%] Linking CXX executable auto_aim_debug_mpc
+[ 85%] Built target standard
+Consolidate compiler generated dependencies of target mt_standard
+[ 86%] Linking CXX executable mt_standard
+[ 86%] Built target auto_aim_debug_mpc
+Consolidate compiler generated dependencies of target mt_auto_aim_debug
+[ 87%] Linking CXX executable mt_auto_aim_debug
+[ 88%] Built target mt_standard
+Consolidate compiler generated dependencies of target auto_buff_debug
+[ 89%] Linking CXX executable auto_buff_debug
+[ 90%] Built target mt_auto_aim_debug
+Consolidate compiler generated dependencies of target auto_buff_debug_mpc
+[ 91%] Linking CXX executable auto_buff_debug_mpc
+[ 92%] Built target auto_buff_debug
+Consolidate compiler generated dependencies of target uav
+[ 93%] Linking CXX executable uav
+[ 94%] Built target auto_buff_debug_mpc
+Consolidate compiler generated dependencies of target uav_debug
+[ 95%] Linking CXX executable uav_debug
+[ 96%] Built target uav
+Consolidate compiler generated dependencies of target auto_buff_test
+[ 97%] Linking CXX executable auto_buff_test
+[ 98%] Built target uav_debug
+Consolidate compiler generated dependencies of target standard_mpc
+[ 98%] Linking CXX executable standard_mpc
+[ 99%] Built target auto_buff_test
+[100%] Built target standard_mpc

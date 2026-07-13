@@ -1,0 +1,12 @@
+mkdir build && cd build
+
+# 执行配置
+# 注意：确认你的 OpenVINO 路径，如果不在这里，按你实际的改
+cmake -DCMAKE_BUILD_TYPE=Release \
+      -DOpenVINO_DIR=/opt/intel/openvino_2024.6.0/runtime/cmake/ \
+      ..
+
+# 编译
+make -j4
+# 运行（如果没接相机，程序可能会报错退出，确保相机插好了）
+./minimal_test
