@@ -26,6 +26,12 @@ Planner::Planner(const std::string & config_path)
 
 Plan Planner::plan(Target target, double bullet_speed)
 {
+  return plan_impl(target, bullet_speed, std::nullopt);
+}
+
+Plan Planner::plan_impl(
+  Target target, double bullet_speed, const std::optional<Eigen::Vector3d> & gimbal_feedback)
+{
   // 0. Check bullet speed
   if (bullet_speed < 10 || bullet_speed > 25) {
     bullet_speed = 22;
@@ -60,7 +66,12 @@ Plan Planner::plan(Target target, double bullet_speed)
 
   // 3. Solve yaw
   Eigen::VectorXd x0(2);
-  x0 << traj(0, 0), traj(1, 0);
+  if (gimbal_feedback.has_value()) {
+    // MPC yaw 状态使用真实云台角度和角速度，实现反馈闭环。
+    x0 << tools::limit_rad((*gimbal_feedback)[0] - yaw0), (*gimbal_feedback)[1];
+  } else {
+    x0 << traj(0, 0), traj(1, 0);
+  }
   tiny_set_x0(yaw_solver_, x0);
 
   yaw_solver_->work->Xref = traj.block(0, 0, 2, HORIZON);
@@ -68,7 +79,12 @@ Plan Planner::plan(Target target, double bullet_speed)
   bool yaw_ok = (yaw_status == 0) && (yaw_solver_->solution->solved == 1);
 
   // 4. Solve pitch
-  x0 << traj(2, 0), traj(3, 0);
+  if (gimbal_feedback.has_value()) {
+    // 反馈协议不提供 pitch_vel，使用实际 pitch 和零初始速度。
+    x0 << (*gimbal_feedback)[2], 0.0;
+  } else {
+    x0 << traj(2, 0), traj(3, 0);
+  }
   tiny_set_x0(pitch_solver_, x0);
 
   pitch_solver_->work->Xref = traj.block(2, 0, 2, HORIZON);
@@ -165,6 +181,29 @@ Plan Planner::plan(std::optional<Target> target, double bullet_speed)
   target->predict(future);
 
   return plan(*target, bullet_speed);
+}
+
+Plan Planner::plan(
+  Target target, double bullet_speed, float current_yaw, float current_yaw_vel,
+  float current_pitch)
+{
+  const Eigen::Vector3d gimbal_feedback(current_yaw, current_yaw_vel, current_pitch);
+  return plan_impl(target, bullet_speed, gimbal_feedback);
+}
+
+Plan Planner::plan(
+  std::optional<Target> target, double bullet_speed, float current_yaw, float current_yaw_vel,
+  float current_pitch)
+{
+  if (!target.has_value()) return {false};
+
+  double delay_time =
+    std::abs(target->ekf_x()[7]) > decision_speed_ ? high_speed_delay_time_ : low_speed_delay_time_;
+
+  auto future = std::chrono::steady_clock::now() + std::chrono::microseconds(int(delay_time * 1e6));
+  target->predict(future);
+
+  return plan(*target, bullet_speed, current_yaw, current_yaw_vel, current_pitch);
 }
 
 Plan Planner::plan(Target target, double bullet_speed, float current_yaw, float current_pitch)

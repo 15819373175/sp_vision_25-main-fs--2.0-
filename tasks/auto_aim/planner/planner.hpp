@@ -40,6 +40,12 @@ public:
 
   Plan plan(Target target, double bullet_speed);
   Plan plan(std::optional<Target> target, double bullet_speed);
+  Plan plan(
+    Target target, double bullet_speed, float current_yaw, float current_yaw_vel,
+    float current_pitch);
+  Plan plan(
+    std::optional<Target> target, double bullet_speed, float current_yaw, float current_yaw_vel,
+    float current_pitch);
   Plan plan(Target target, double bullet_speed, float current_yaw, float current_pitch);
   Plan plan(std::optional<Target> target, double bullet_speed, float current_yaw, float current_pitch);
 
@@ -60,6 +66,9 @@ private:
   bool yaw_converged_ = true;
   bool pitch_converged_ = true;
   int64_t solve_time_us_ = 0;
+
+  Plan plan_impl(
+    Target target, double bullet_speed, const std::optional<Eigen::Vector3d> & gimbal_feedback);
 
   void setup_yaw_solver(const std::string & config_path);
   void setup_pitch_solver(const std::string & config_path);

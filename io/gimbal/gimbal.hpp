@@ -4,6 +4,7 @@
 #include <Eigen/Geometry>
 #include <atomic>
 #include <chrono>
+#include <cstddef>
 #include <mutex>
 #include <string>
 #include <thread>
@@ -102,7 +103,9 @@ struct GimbalState
 {
   float yaw;
   float yaw_vel;
+  float yaw_acc;
   float pitch;
+  // 当前反馈协议没有 pitch_vel，保留字段以兼容现有上位机模块。
   float pitch_vel;
   float bullet_speed;
   uint16_t bullet_count;
@@ -122,8 +125,7 @@ public:
 
   // 发送控制指令
   void send(
-    bool control, bool fire, float yaw, float yaw_vel, float yaw_acc, float pitch, float pitch_vel,
-    float pitch_acc);
+    bool control, bool fire, float yaw, float yaw_vel, float yaw_acc, float pitch);
 
   // 通信健康监控
   GimbalStats stats() const;
@@ -136,7 +138,15 @@ private:
   static constexpr uint8_t HEAD_BYTE = 0xFF;
   static constexpr uint8_t DESTINATION_ADDRESS = 0x02;
   static constexpr uint8_t ID_GIMBAL = 0x20;
-  static constexpr uint8_t GIMBAL_PAYLOAD_LENGTH = 25;
+  // 上位机 -> 下位机：mode + yaw + yaw_vel + yaw_acc + pitch。
+  static constexpr uint8_t GIMBAL_COMMAND_PAYLOAD_LENGTH = 17;
+
+  // 下位机 -> 上位机：mode + yaw + pitch + reserved[8] + yaw_vel + yaw_acc。
+  static constexpr uint8_t GIMBAL_FEEDBACK_PAYLOAD_LENGTH = 25;
+  static constexpr std::size_t FEEDBACK_YAW_OFFSET = 1;
+  static constexpr std::size_t FEEDBACK_PITCH_OFFSET = 5;
+  static constexpr std::size_t FEEDBACK_YAW_VEL_OFFSET = 17;
+  static constexpr std::size_t FEEDBACK_YAW_ACC_OFFSET = 21;
 
   serial::Serial serial_;
 
