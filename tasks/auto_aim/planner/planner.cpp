@@ -1,5 +1,6 @@
 #include "planner.hpp"
 
+#include <stdexcept>
 #include <vector>
 
 #include "tools/math_tools.hpp"
@@ -16,6 +17,19 @@ Planner::Planner(const std::string & config_path)
   yaw_offset_ = tools::read<double>(yaml, "yaw_offset") / 57.3;
   pitch_offset_ = tools::read<double>(yaml, "pitch_offset") / 57.3;
   fire_thresh_ = tools::read<double>(yaml, "fire_thresh");
+  // 兼容旧配置：没有下面三项时，默认使用 1 deg、1 deg、30 deg/s。
+  fire_yaw_feedback_thresh_ =
+    yaml["fire_yaw_feedback_thresh"]
+      ? yaml["fire_yaw_feedback_thresh"].as<double>() / 57.3
+      : 1.0 / 57.3;
+  fire_pitch_feedback_thresh_ =
+    yaml["fire_pitch_feedback_thresh"]
+      ? yaml["fire_pitch_feedback_thresh"].as<double>() / 57.3
+      : 1.0 / 57.3;
+  fire_yaw_vel_feedback_thresh_ =
+    yaml["fire_yaw_vel_feedback_thresh"]
+      ? yaml["fire_yaw_vel_feedback_thresh"].as<double>() / 57.3
+      : 30.0 / 57.3;
   decision_speed_ = tools::read<double>(yaml, "decision_speed");
   high_speed_delay_time_ = tools::read<double>(yaml, "high_speed_delay_time");
   low_speed_delay_time_ = tools::read<double>(yaml, "low_speed_delay_time");
@@ -25,6 +39,12 @@ Planner::Planner(const std::string & config_path)
 }
 
 Plan Planner::plan(Target target, double bullet_speed)
+{
+  return plan_impl(target, bullet_speed, std::nullopt);
+}
+
+Plan Planner::plan_impl(
+  Target target, double bullet_speed, const std::optional<Eigen::Vector3d> & gimbal_feedback)
 {
   // 0. Check bullet speed
   if (bullet_speed < 10 || bullet_speed > 25) {
@@ -48,8 +68,11 @@ Plan Planner::plan(Target target, double bullet_speed)
   double yaw0;
   Trajectory traj;
   try {
-    yaw0 = aim(target, bullet_speed)(0);
-    traj = get_trajectory(target, yaw0, bullet_speed);
+    // 在当前瞄准时刻只选择一次装甲板；整个 MPC 预测区间都使用该 armor_id。
+    // 否则每个预测点重新选择最近装甲板，会在切换处制造不连续参考轨迹。
+    const int armor_id = nearest_armor_id(target);
+    yaw0 = aim(target, bullet_speed, armor_id)(0);
+    traj = get_trajectory(target, yaw0, bullet_speed, armor_id);
   } catch (const std::exception & e) {
     tools::logger()->warn("Unsolvable target {:.2f}", bullet_speed);
     return {false};
@@ -60,7 +83,12 @@ Plan Planner::plan(Target target, double bullet_speed)
 
   // 3. Solve yaw
   Eigen::VectorXd x0(2);
-  x0 << traj(0, 0), traj(1, 0);
+  if (gimbal_feedback.has_value()) {
+    // MPC yaw 状态使用真实云台角度和角速度，实现反馈闭环。
+    x0 << tools::limit_rad((*gimbal_feedback)[0] - yaw0), (*gimbal_feedback)[1];
+  } else {
+    x0 << traj(0, 0), traj(1, 0);
+  }
   tiny_set_x0(yaw_solver_, x0);
 
   yaw_solver_->work->Xref = traj.block(0, 0, 2, HORIZON);
@@ -68,7 +96,12 @@ Plan Planner::plan(Target target, double bullet_speed)
   bool yaw_ok = (yaw_status == 0) && (yaw_solver_->solution->solved == 1);
 
   // 4. Solve pitch
-  x0 << traj(2, 0), traj(3, 0);
+  if (gimbal_feedback.has_value()) {
+    // 反馈协议不提供 pitch_vel，使用实际 pitch 和零初始速度。
+    x0 << (*gimbal_feedback)[2], 0.0;
+  } else {
+    x0 << traj(2, 0), traj(3, 0);
+  }
   tiny_set_x0(pitch_solver_, x0);
 
   pitch_solver_->work->Xref = traj.block(2, 0, 2, HORIZON);
@@ -134,7 +167,9 @@ Plan Planner::plan(Target target, double bullet_speed)
     plan.pitch_acc = 0;
   }
 
-  // ── 射击判定：MPC 优化轨迹 vs 参考轨迹的跟踪误差 ──
+  // ── 射击判定 ──
+  // MPC 必须正常收敛，并且实际云台 yaw、pitch、yaw_vel 都真正跟上目标。
+  // 任意条件不满足或没有实际反馈时，一律禁止开火。
   constexpr int shoot_offset = 2;
   double yaw_err = 0;
   double pitch_err = 0;
@@ -146,9 +181,26 @@ Plan Planner::plan(Target target, double bullet_speed)
     pitch_err = traj(2, HALF_HORIZON + shoot_offset) -
                 pitch_solver_->work->x(0, HALF_HORIZON + shoot_offset);
   }
-  // 降级时误差保持 0，保守允许射击（不下位机断线时卡住不开火）
+  const bool mpc_ready =
+    yaw_ok && pitch_ok && std::hypot(yaw_err, pitch_err) < fire_thresh_;
 
-  plan.fire = std::hypot(yaw_err, pitch_err) < fire_thresh_;
+  bool feedback_ready = false;
+  if (gimbal_feedback.has_value()) {
+    const double actual_yaw_err = std::abs(
+      tools::limit_rad(plan.target_yaw - (*gimbal_feedback)[0]));
+    const double actual_pitch_err = std::abs(
+      plan.target_pitch - (*gimbal_feedback)[2]);
+    const double actual_yaw_vel_err = std::abs(
+      traj(1, HALF_HORIZON) - (*gimbal_feedback)[1]);
+
+    feedback_ready =
+      actual_yaw_err < fire_yaw_feedback_thresh_ &&
+      actual_pitch_err < fire_pitch_feedback_thresh_ &&
+      actual_yaw_vel_err < fire_yaw_vel_feedback_thresh_;
+  }
+
+  // MPC 发散/降级、反馈缺失或实际误差超限时一律不开火。
+  plan.fire = mpc_ready && feedback_ready;
 
   return plan;
 }
@@ -165,6 +217,29 @@ Plan Planner::plan(std::optional<Target> target, double bullet_speed)
   target->predict(future);
 
   return plan(*target, bullet_speed);
+}
+
+Plan Planner::plan(
+  Target target, double bullet_speed, float current_yaw, float current_yaw_vel,
+  float current_pitch)
+{
+  const Eigen::Vector3d gimbal_feedback(current_yaw, current_yaw_vel, current_pitch);
+  return plan_impl(target, bullet_speed, gimbal_feedback);
+}
+
+Plan Planner::plan(
+  std::optional<Target> target, double bullet_speed, float current_yaw, float current_yaw_vel,
+  float current_pitch)
+{
+  if (!target.has_value()) return {false};
+
+  double delay_time =
+    std::abs(target->ekf_x()[7]) > decision_speed_ ? high_speed_delay_time_ : low_speed_delay_time_;
+
+  auto future = std::chrono::steady_clock::now() + std::chrono::microseconds(int(delay_time * 1e6));
+  target->predict(future);
+
+  return plan(*target, bullet_speed, current_yaw, current_yaw_vel, current_pitch);
 }
 
 Plan Planner::plan(Target target, double bullet_speed, float current_yaw, float current_pitch)
@@ -250,45 +325,70 @@ void Planner::setup_pitch_solver(const std::string & config_path)
   pitch_solver_->settings->max_iter = 30;
 }
 
-Eigen::Matrix<double, 2, 1> Planner::aim(const Target & target, double bullet_speed)
+int Planner::nearest_armor_id(const Target & target) const
 {
-  Eigen::Vector3d xyz;
-  double yaw;
-  auto min_dist = 1e10;
+  const auto armors = target.armor_xyza_list();
+  if (armors.empty()) throw std::runtime_error("Target has no armor");
 
-  for (auto & xyza : target.armor_xyza_list()) {
-    auto dist = xyza.head<2>().norm();
+  int nearest_id = 0;
+  double min_dist = armors.front().head<2>().norm();
+  for (int i = 1; i < static_cast<int>(armors.size()); ++i) {
+    const double dist = armors[i].head<2>().norm();
     if (dist < min_dist) {
       min_dist = dist;
-      xyz = xyza.head<3>();
-      yaw = xyza[3];
+      nearest_id = i;
     }
   }
+
+  return nearest_id;
+}
+
+Eigen::Matrix<double, 2, 1> Planner::aim(
+  const Target & target, double bullet_speed, int armor_id)
+{
+  const auto armors = target.armor_xyza_list();
+  if (armor_id < 0 || armor_id >= static_cast<int>(armors.size())) {
+    throw std::out_of_range("Invalid armor id");
+  }
+
+  const auto & xyza = armors[armor_id];
+  const Eigen::Vector3d xyz = xyza.head<3>();
+  const double yaw = xyza[3];
+  const double horizontal_dist = xyza.head<2>().norm();
+
   debug_xyza = Eigen::Vector4d(xyz.x(), xyz.y(), xyz.z(), yaw);
 
   auto azim = std::atan2(xyz.y(), xyz.x());
-  auto bullet_traj = tools::Trajectory(bullet_speed, min_dist, xyz.z());
+  auto bullet_traj = tools::Trajectory(bullet_speed, horizontal_dist, xyz.z());
   if (bullet_traj.unsolvable) throw std::runtime_error("Unsolvable bullet trajectory!");
 
   return {tools::limit_rad(azim + yaw_offset_), bullet_traj.pitch + pitch_offset_};
 }
 
-Trajectory Planner::get_trajectory(Target & target, double yaw0, double bullet_speed)
+Trajectory Planner::get_trajectory(
+  Target & target, double yaw0, double bullet_speed, int armor_id)
 {
   Trajectory traj;
 
   target.predict(-DT * (HALF_HORIZON + 1));
-  auto yaw_pitch_last = aim(target, bullet_speed);
+  auto yaw_pitch_last = aim(target, bullet_speed, armor_id);
 
   target.predict(DT);  // [0] = -HALF_HORIZON * DT -> [HHALF_HORIZON] = 0
-  auto yaw_pitch = aim(target, bullet_speed);
+  auto yaw_pitch = aim(target, bullet_speed, armor_id);
 
   for (int i = 0; i < HORIZON; i++) {
     target.predict(DT);
-    auto yaw_pitch_next = aim(target, bullet_speed);
+    auto yaw_pitch_next = aim(target, bullet_speed, armor_id);
 
-    auto yaw_vel = tools::limit_rad(yaw_pitch_next(0) - yaw_pitch_last(0)) / (2 * DT);
-    auto pitch_vel = (yaw_pitch_next(1) - yaw_pitch_last(1)) / (2 * DT);
+    auto yaw_vel_raw =
+      tools::limit_rad(yaw_pitch_next(0) - yaw_pitch_last(0)) / (2 * DT);
+
+    auto pitch_vel_raw =
+      (yaw_pitch_next(1) - yaw_pitch_last(1)) / (2 * DT);
+
+    // 安全限幅，单位分别为 rad/s。
+    auto yaw_vel = tools::limit_min_max(yaw_vel_raw, -6.0, 6.0);
+    auto pitch_vel = tools::limit_min_max(pitch_vel_raw, -3.0, 3.0);
 
     traj.col(i) << tools::limit_rad(yaw_pitch(0) - yaw0), yaw_vel, yaw_pitch(1), pitch_vel;
 

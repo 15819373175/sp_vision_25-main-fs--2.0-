@@ -74,13 +74,14 @@ int main(int argc, char * argv[])
     }
     fire_count++;
 
-    gimbal.send(true, test_fire && fire, 1, 0, 0, 0, 0, 0);
+    gimbal.send(true, test_fire && fire, 1, 0, 0, 0);
 
     nlohmann::json data;
     data["q_yaw"] = ypr[0];
     data["q_pitch"] = ypr[1];
     data["yaw"] = state.yaw;
     data["vyaw"] = state.yaw_vel;
+    data["ayaw"] = state.yaw_acc;
     data["pitch"] = state.pitch;
     data["vpitch"] = state.pitch_vel;
     data["bullet_speed"] = state.bullet_speed;
@@ -93,7 +94,7 @@ int main(int argc, char * argv[])
     std::this_thread::sleep_for(9ms);
   }
 
-  gimbal.send(false, false, 0, 0, 0, 0, 0, 0);
+  gimbal.send(false, false, 0, 0, 0, 0);
 
   return 0;
 }

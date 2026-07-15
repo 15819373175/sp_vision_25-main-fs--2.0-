@@ -40,6 +40,12 @@ public:
 
   Plan plan(Target target, double bullet_speed);
   Plan plan(std::optional<Target> target, double bullet_speed);
+  Plan plan(
+    Target target, double bullet_speed, float current_yaw, float current_yaw_vel,
+    float current_pitch);
+  Plan plan(
+    std::optional<Target> target, double bullet_speed, float current_yaw, float current_yaw_vel,
+    float current_pitch);
   Plan plan(Target target, double bullet_speed, float current_yaw, float current_pitch);
   Plan plan(std::optional<Target> target, double bullet_speed, float current_yaw, float current_pitch);
 
@@ -51,6 +57,10 @@ private:
   double yaw_offset_;
   double pitch_offset_;
   double fire_thresh_;
+  // 最终开火门控阈值。配置项单位为 degree / degree/s，内部统一为 rad / rad/s。
+  double fire_yaw_feedback_thresh_;
+  double fire_pitch_feedback_thresh_;
+  double fire_yaw_vel_feedback_thresh_;
   double low_speed_delay_time_, high_speed_delay_time_, decision_speed_;
 
   TinySolver * yaw_solver_;
@@ -61,11 +71,19 @@ private:
   bool pitch_converged_ = true;
   int64_t solve_time_us_ = 0;
 
+  Plan plan_impl(
+    Target target, double bullet_speed, const std::optional<Eigen::Vector3d> & gimbal_feedback);
+
   void setup_yaw_solver(const std::string & config_path);
   void setup_pitch_solver(const std::string & config_path);
 
-  Eigen::Matrix<double, 2, 1> aim(const Target & target, double bullet_speed);
-  Trajectory get_trajectory(Target & target, double yaw0, double bullet_speed);
+  // 一次 MPC 预测周期内固定同一块装甲板，避免“最近装甲板”切换
+  // 导致参考 yaw、yaw_vel 和 yaw_acc 出现周期性尖峰。
+  int nearest_armor_id(const Target & target) const;
+  Eigen::Matrix<double, 2, 1> aim(
+    const Target & target, double bullet_speed, int armor_id);
+  Trajectory get_trajectory(
+    Target & target, double yaw0, double bullet_speed, int armor_id);
 };
 
 }  // namespace auto_aim

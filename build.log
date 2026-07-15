@@ -1,109 +1,152 @@
-Consolidate compiler generated dependencies of target serial
-Consolidate compiler generated dependencies of target tinympcstatic
-[  3%] Built target serial
-[  8%] Built target tinympcstatic
-Consolidate compiler generated dependencies of target omniperception
-Consolidate compiler generated dependencies of target tools
-[ 10%] Built target omniperception
-[ 19%] Built target tools
-Consolidate compiler generated dependencies of target io
-[ 20%] Building CXX object io/CMakeFiles/io.dir/gimbal/gimbal.cpp.o
-[ 20%] Linking CXX static library libio.a
+[  1%] Building CXX object io/serial/CMakeFiles/serial.dir/src/serial.cc.o
+[  2%] Building CXX object tasks/auto_aim/planner/tinympc/CMakeFiles/tinympcstatic.dir/admm.cpp.o
+[  2%] Building CXX object io/serial/CMakeFiles/serial.dir/src/impl/unix.cc.o
+[  3%] Building CXX object io/serial/CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o
+[  4%] Linking CXX static library libserial.a
+[  4%] Built target serial
+[  5%] Building CXX object tools/CMakeFiles/tools.dir/exiter.cpp.o
+[  6%] Building CXX object tools/CMakeFiles/tools.dir/extended_kalman_filter.cpp.o
+[  7%] Building CXX object tasks/auto_aim/planner/tinympc/CMakeFiles/tinympcstatic.dir/tiny_api.cpp.o
+[  7%] Building CXX object tools/CMakeFiles/tools.dir/ransac_sine_fitter.cpp.o
+[  8%] Building CXX object tasks/auto_aim/planner/tinympc/CMakeFiles/tinympcstatic.dir/codegen.cpp.o
+[  9%] Building CXX object tasks/auto_aim/planner/tinympc/CMakeFiles/tinympcstatic.dir/rho_benchmark.cpp.o
+[ 10%] Linking CXX static library libtinympcstatic.a
+[ 10%] Built target tinympcstatic
+[ 11%] Building CXX object tasks/omniperception/CMakeFiles/omniperception.dir/decider.cpp.o
+[ 12%] Building CXX object tasks/omniperception/CMakeFiles/omniperception.dir/perceptron.cpp.o
+[ 12%] Built target omniperception
+[ 13%] Building CXX object tools/CMakeFiles/tools.dir/img_tools.cpp.o
+[ 14%] Building CXX object io/CMakeFiles/io.dir/hikrobot/hikrobot.cpp.o
+[ 15%] Building CXX object tools/CMakeFiles/tools.dir/math_tools.cpp.o
+[ 16%] Building CXX object tools/CMakeFiles/tools.dir/plotter.cpp.o
+[ 17%] Building CXX object tools/CMakeFiles/tools.dir/trajectory.cpp.o
+[ 18%] Building CXX object tools/CMakeFiles/tools.dir/recorder.cpp.o
+[ 19%] Building CXX object io/CMakeFiles/io.dir/mindvision/mindvision.cpp.o
+[ 20%] Building CXX object tools/CMakeFiles/tools.dir/logger.cpp.o
+[ 21%] Building CXX object tools/CMakeFiles/tools.dir/pid.cpp.o
+[ 21%] Building CXX object tools/CMakeFiles/tools.dir/crc.cpp.o
+[ 21%] Built target tools
+[ 22%] Building CXX object io/CMakeFiles/io.dir/usbcamera/usbcamera.cpp.o
+[ 23%] Building CXX object io/CMakeFiles/io.dir/camera.cpp.o
+[ 24%] Building CXX object io/CMakeFiles/io.dir/cboard.cpp.o
+[ 25%] Building CXX object io/CMakeFiles/io.dir/dm_imu/dm_imu.cpp.o
+[ 26%] Building CXX object io/CMakeFiles/io.dir/gimbal/gimbal.cpp.o
+[ 26%] Linking CXX static library libio.a
 [ 26%] Built target io
-Consolidate compiler generated dependencies of target gimbal_test
-[ 27%] Linking CXX executable gimbal_test
-Consolidate compiler generated dependencies of target auto_aim
-[ 41%] Built target auto_aim
-Consolidate compiler generated dependencies of target gimbal_response_test
-[ 42%] Linking CXX executable gimbal_response_test
-[ 43%] Built target gimbal_test
-Consolidate compiler generated dependencies of target cboard_test
-[ 44%] Linking CXX executable cboard_test
-[ 45%] Built target gimbal_response_test
-Consolidate compiler generated dependencies of target camera_test
-[ 46%] Linking CXX executable camera_test
-[ 47%] Built target cboard_test
-Consolidate compiler generated dependencies of target camera_thread_test
-[ 48%] Linking CXX executable camera_thread_test
-[ 48%] Built target camera_test
-Consolidate compiler generated dependencies of target usbcamera_test
-[ 49%] Linking CXX executable usbcamera_test
-[ 50%] Built target usbcamera_test
-Consolidate compiler generated dependencies of target auto_aim_test
-[ 51%] Linking CXX executable auto_aim_test
-[ 52%] Built target camera_thread_test
-Consolidate compiler generated dependencies of target planner_test
-[ 53%] Linking CXX executable planner_test
-[ 54%] Built target auto_aim_test
-Consolidate compiler generated dependencies of target planner_test_offline
-[ 55%] Linking CXX executable planner_test_offline
-[ 56%] Built target planner_test
-Consolidate compiler generated dependencies of target dm_test
-[ 57%] Linking CXX executable dm_test
-[ 58%] Built target planner_test_offline
-Consolidate compiler generated dependencies of target handeye_test
-[ 58%] Linking CXX executable handeye_test
-[ 59%] Built target dm_test
-Consolidate compiler generated dependencies of target camera_detect_test
-[ 60%] Linking CXX executable camera_detect_test
-[ 61%] Built target handeye_test
-Consolidate compiler generated dependencies of target usbcamera_detect_test
-[ 62%] Linking CXX executable usbcamera_detect_test
-[ 63%] Built target camera_detect_test
-Consolidate compiler generated dependencies of target detector_video_test
-[ 64%] Linking CXX executable detector_video_test
-[ 65%] Built target usbcamera_detect_test
-Consolidate compiler generated dependencies of target multi_usbcamera_test
-[ 65%] Linking CXX executable multi_usbcamera_test
-[ 65%] Built target detector_video_test
-Consolidate compiler generated dependencies of target minimum_vision_system
-[ 66%] Linking CXX executable minimum_vision_system
-[ 67%] Built target multi_usbcamera_test
-Consolidate compiler generated dependencies of target calibrate_camera
-[ 68%] Linking CXX executable calibrate_camera
-[ 69%] Built target minimum_vision_system
-Consolidate compiler generated dependencies of target calibrate_handeye
-[ 70%] Linking CXX executable calibrate_handeye
-[ 70%] Built target calibrate_camera
-Consolidate compiler generated dependencies of target calibrate_robotworld_handeye
-[ 71%] Linking CXX executable calibrate_robotworld_handeye
-[ 72%] Built target calibrate_handeye
-Consolidate compiler generated dependencies of target capture
-[ 73%] Linking CXX executable capture
-[ 74%] Built target calibrate_robotworld_handeye
-Consolidate compiler generated dependencies of target split_video
-[ 75%] Linking CXX executable split_video
-[ 76%] Built target split_video
-Consolidate compiler generated dependencies of target auto_buff
-[ 81%] Built target auto_buff
-Consolidate compiler generated dependencies of target standard
-[ 82%] Linking CXX executable standard
-[ 83%] Built target capture
-Consolidate compiler generated dependencies of target auto_aim_debug_mpc
-[ 84%] Linking CXX executable auto_aim_debug_mpc
-[ 85%] Built target standard
-Consolidate compiler generated dependencies of target mt_standard
-[ 86%] Linking CXX executable mt_standard
-[ 86%] Built target auto_aim_debug_mpc
-Consolidate compiler generated dependencies of target mt_auto_aim_debug
-[ 87%] Linking CXX executable mt_auto_aim_debug
-[ 88%] Built target mt_standard
-Consolidate compiler generated dependencies of target auto_buff_debug
-[ 89%] Linking CXX executable auto_buff_debug
-[ 90%] Built target mt_auto_aim_debug
-Consolidate compiler generated dependencies of target auto_buff_debug_mpc
-[ 91%] Linking CXX executable auto_buff_debug_mpc
-[ 92%] Built target auto_buff_debug
-Consolidate compiler generated dependencies of target uav
-[ 93%] Linking CXX executable uav
-[ 94%] Built target auto_buff_debug_mpc
-Consolidate compiler generated dependencies of target uav_debug
-[ 95%] Linking CXX executable uav_debug
-[ 96%] Built target uav
-Consolidate compiler generated dependencies of target auto_buff_test
-[ 97%] Linking CXX executable auto_buff_test
-[ 98%] Built target uav_debug
-Consolidate compiler generated dependencies of target standard_mpc
-[ 98%] Linking CXX executable standard_mpc
-[ 99%] Built target auto_buff_test
-[100%] Built target standard_mpc
+[ 27%] Building CXX object CMakeFiles/gimbal_test.dir/tests/gimbal_test.cpp.o
+[ 27%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/armor.cpp.o
+[ 28%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/classifier.cpp.o
+[ 29%] Linking CXX executable gimbal_test
+[ 29%] Built target gimbal_test
+[ 30%] Building CXX object CMakeFiles/gimbal_response_test.dir/tests/gimbal_response_test.cpp.o
+[ 31%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/detector.cpp.o
+[ 32%] Linking CXX executable gimbal_response_test
+[ 32%] Built target gimbal_response_test
+[ 33%] Building CXX object CMakeFiles/cboard_test.dir/tests/cboard_test.cpp.o
+[ 34%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/solver.cpp.o
+[ 35%] Linking CXX executable cboard_test
+[ 35%] Built target cboard_test
+[ 35%] Building CXX object CMakeFiles/camera_test.dir/tests/camera_test.cpp.o
+[ 36%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/aimer.cpp.o
+[ 37%] Linking CXX executable camera_test
+[ 37%] Built target camera_test
+[ 38%] Building CXX object CMakeFiles/usbcamera_test.dir/tests/usbcamera_test.cpp.o
+[ 39%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/target.cpp.o
+[ 40%] Linking CXX executable usbcamera_test
+[ 40%] Built target usbcamera_test
+[ 40%] Building CXX object CMakeFiles/calibrate_camera.dir/calibration/calibrate_camera.cpp.o
+[ 41%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/tracker.cpp.o
+[ 42%] Linking CXX executable calibrate_camera
+[ 42%] Built target calibrate_camera
+[ 43%] Building CXX object CMakeFiles/calibrate_handeye.dir/calibration/calibrate_handeye.cpp.o
+[ 44%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/voter.cpp.o
+[ 44%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/shooter.cpp.o
+[ 45%] Linking CXX executable calibrate_handeye
+[ 45%] Built target calibrate_handeye
+[ 46%] Building CXX object CMakeFiles/calibrate_robotworld_handeye.dir/calibration/calibrate_robotworld_handeye.cpp.o
+[ 47%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/yolo.cpp.o
+[ 48%] Linking CXX executable calibrate_robotworld_handeye
+[ 49%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolov5.cpp.o
+[ 49%] Built target calibrate_robotworld_handeye
+[ 50%] Building CXX object CMakeFiles/capture.dir/calibration/capture.cpp.o
+[ 51%] Linking CXX executable capture
+[ 52%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolov8.cpp.o
+[ 52%] Built target capture
+[ 53%] Building CXX object CMakeFiles/split_video.dir/calibration/split_video.cpp.o
+[ 54%] Linking CXX executable split_video
+[ 55%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/yolos/yolo11.cpp.o
+[ 55%] Built target split_video
+[ 56%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/commandgener.cpp.o
+[ 57%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/multithread/mt_detector.cpp.o
+[ 58%] Building CXX object tasks/auto_aim/CMakeFiles/auto_aim.dir/planner/planner.cpp.o
+[ 58%] Built target auto_aim
+[ 60%] Building CXX object tasks/auto_buff/CMakeFiles/auto_buff.dir/buff_type.cpp.o
+[ 60%] Building CXX object CMakeFiles/standard.dir/src/standard.cpp.o
+[ 61%] Building CXX object tasks/auto_buff/CMakeFiles/auto_buff.dir/buff_detector.cpp.o
+[ 62%] Linking CXX executable standard
+[ 63%] Building CXX object tasks/auto_buff/CMakeFiles/auto_buff.dir/buff_solver.cpp.o
+[ 63%] Built target standard
+[ 63%] Building CXX object CMakeFiles/auto_aim_debug_mpc.dir/src/auto_aim_debug_mpc.cpp.o
+[ 64%] Building CXX object tasks/auto_buff/CMakeFiles/auto_buff.dir/buff_aimer.cpp.o
+[ 65%] Linking CXX executable auto_aim_debug_mpc
+[ 65%] Built target auto_aim_debug_mpc
+[ 66%] Building CXX object CMakeFiles/uav_debug.dir/src/uav_debug.cpp.o
+[ 66%] Building CXX object tasks/auto_buff/CMakeFiles/auto_buff.dir/buff_target.cpp.o
+[ 67%] Linking CXX executable uav_debug
+[ 68%] Building CXX object tasks/auto_buff/CMakeFiles/auto_buff.dir/yolo11_buff.cpp.o
+[ 68%] Built target uav_debug
+[ 69%] Building CXX object CMakeFiles/camera_thread_test.dir/tests/camera_thread_test.cpp.o
+[ 69%] Built target auto_buff
+[ 70%] Building CXX object CMakeFiles/auto_aim_test.dir/tests/auto_aim_test.cpp.o
+[ 71%] Linking CXX executable camera_thread_test
+[ 71%] Built target camera_thread_test
+[ 72%] Building CXX object CMakeFiles/planner_test.dir/tests/planner_test.cpp.o
+[ 73%] Linking CXX executable auto_aim_test
+[ 73%] Built target auto_aim_test
+[ 74%] Building CXX object CMakeFiles/planner_test_offline.dir/tests/planner_test_offline.cpp.o
+[ 75%] Linking CXX executable planner_test
+[ 75%] Built target planner_test
+[ 76%] Building CXX object CMakeFiles/auto_buff_test.dir/tests/auto_buff_test.cpp.o
+[ 77%] Linking CXX executable planner_test_offline
+[ 77%] Built target planner_test_offline
+[ 78%] Building CXX object CMakeFiles/dm_test.dir/tests/dm_test.cpp.o
+[ 79%] Linking CXX executable dm_test
+[ 80%] Linking CXX executable auto_buff_test
+[ 80%] Built target dm_test
+[ 81%] Building CXX object CMakeFiles/handeye_test.dir/tests/handeye_test.cpp.o
+[ 81%] Built target auto_buff_test
+[ 82%] Building CXX object CMakeFiles/camera_detect_test.dir/tests/camera_detect_test.cpp.o
+[ 82%] Linking CXX executable handeye_test
+[ 83%] Linking CXX executable camera_detect_test
+[ 83%] Built target handeye_test
+[ 84%] Building CXX object CMakeFiles/usbcamera_detect_test.dir/tests/usbcamera_detect_test.cpp.o
+[ 84%] Built target camera_detect_test
+[ 84%] Building CXX object CMakeFiles/detector_video_test.dir/tests/detector_video_test.cpp.o
+[ 85%] Linking CXX executable usbcamera_detect_test
+[ 86%] Linking CXX executable detector_video_test
+[ 86%] Built target usbcamera_detect_test
+[ 87%] Building CXX object CMakeFiles/multi_usbcamera_test.dir/tests/multi_usbcamera_test.cpp.o
+[ 87%] Built target detector_video_test
+[ 88%] Building CXX object CMakeFiles/minimum_vision_system.dir/tests/minimum_vision_system.cpp.o
+[ 88%] Linking CXX executable multi_usbcamera_test
+[ 88%] Built target multi_usbcamera_test
+[ 89%] Building CXX object CMakeFiles/standard_mpc.dir/src/standard_mpc.cpp.o
+[ 90%] Linking CXX executable minimum_vision_system
+[ 90%] Built target minimum_vision_system
+[ 91%] Building CXX object CMakeFiles/mt_standard.dir/src/mt_standard.cpp.o
+[ 91%] Linking CXX executable standard_mpc
+[ 91%] Built target standard_mpc
+[ 92%] Building CXX object CMakeFiles/mt_auto_aim_debug.dir/src/mt_auto_aim_debug.cpp.o
+[ 93%] Linking CXX executable mt_standard
+[ 93%] Built target mt_standard
+[ 94%] Building CXX object CMakeFiles/auto_buff_debug.dir/src/auto_buff_debug.cpp.o
+[ 95%] Linking CXX executable mt_auto_aim_debug
+[ 96%] Linking CXX executable auto_buff_debug
+[ 96%] Built target mt_auto_aim_debug
+[ 97%] Building CXX object CMakeFiles/auto_buff_debug_mpc.dir/src/auto_buff_debug_mpc.cpp.o
+[ 97%] Built target auto_buff_debug
+[ 98%] Building CXX object CMakeFiles/uav.dir/src/uav.cpp.o
+[ 99%] Linking CXX executable auto_buff_debug_mpc
+[ 99%] Built target auto_buff_debug_mpc
+[100%] Linking CXX executable uav
+[100%] Built target uav

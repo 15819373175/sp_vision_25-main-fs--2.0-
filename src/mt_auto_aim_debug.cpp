@@ -77,7 +77,7 @@ int main(int argc, char * argv[])
         fire = shooter.shoot(cmd, aimer, {*target}, gimbal_pos);
       }
 
-      gimbal.send(cmd.control, fire, yaw, 0, 0, pitch, 0, 0);
+      gimbal.send(cmd.control, fire, yaw, 0, 0, pitch);
 
       auto fired = gs.bullet_count > last_bullet_count;
       last_bullet_count = gs.bullet_count;
@@ -87,6 +87,7 @@ int main(int argc, char * argv[])
 
       data["gimbal_yaw"] = gs.yaw;
       data["gimbal_yaw_vel"] = gs.yaw_vel;
+      data["gimbal_yaw_acc"] = gs.yaw_acc;
       data["gimbal_pitch"] = gs.pitch;
       data["gimbal_pitch_vel"] = gs.pitch_vel;
 
@@ -183,7 +184,7 @@ int main(int argc, char * argv[])
   exiter.exit();
   detect_thread.join();
   aim_thread.join();
-  gimbal.send(false, false, 0, 0, 0, 0, 0, 0);
+  gimbal.send(false, false, 0, 0, 0, 0);
 
   return 0;
 }

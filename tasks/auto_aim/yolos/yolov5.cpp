@@ -61,18 +61,39 @@ std::list<Armor> YOLOV5::detect(const cv::Mat & raw_img, int frame_count)
     return std::list<Armor>();
   }
 
-  cv::Mat bgr_img;
-  if (use_roi_) {
-    if (roi_.width == -1) {  // -1 表示该维度不裁切
-      roi_.width = raw_img.cols;
-    }
-    if (roi_.height == -1) {  // -1 表示该维度不裁切
-      roi_.height = raw_img.rows;
-    }
-    bgr_img = raw_img(roi_);
-  } else {
-    bgr_img = raw_img;
+cv::Mat bgr_img;
+
+if (use_roi_) {
+  // 使用局部变量，避免永久修改配置中的 roi_
+  cv::Rect safe_roi = roi_;
+
+  // -1 表示从当前位置一直裁剪到图像边界
+  if (safe_roi.width == -1) {
+    safe_roi.width = raw_img.cols - safe_roi.x;
   }
+
+  if (safe_roi.height == -1) {
+    safe_roi.height = raw_img.rows - safe_roi.y;
+  }
+
+  // 将配置ROI限制在当前图像范围内
+  const cv::Rect image_rect(0, 0, raw_img.cols, raw_img.rows);
+  safe_roi &= image_rect;
+
+  // ROI完全位于图像外时，本帧不进行识别
+  if (safe_roi.width <= 0 || safe_roi.height <= 0) {
+    tools::logger()->warn(
+      "Invalid ROI: x={} y={} width={} height={}, image={}x{}",
+      roi_.x, roi_.y, roi_.width, roi_.height,
+      raw_img.cols, raw_img.rows);
+
+    return std::list<Armor>{};
+  }
+
+  bgr_img = raw_img(safe_roi);
+} else {
+  bgr_img = raw_img;
+}
 
   auto x_scale = static_cast<double>(640) / bgr_img.rows;
   auto y_scale = static_cast<double>(640) / bgr_img.cols;

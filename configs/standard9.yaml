@@ -57,7 +57,7 @@ camera_name: "hikrobot"
 exposure_ms: 5
 gain: 22
 vid_pid: "2bdf:0001"
-
+frame_rate: 30
 #  1  0  0
 #  0  1  0
 #  0  0  1
@@ -104,4 +104,10 @@ model: "assets/yolo11_buff_int8.xml"
 #####-----buff_aimer参数-----#####
 fire_gap_time: 0.700   # s
 predict_time: 0.120     # s
-frame_rate: 30
+
+
+
+fire_yaw_feedback_thresh: 1.0
+fire_pitch_feedback_thresh: 1.0
+fire_yaw_vel_feedback_thresh: 30.0
+

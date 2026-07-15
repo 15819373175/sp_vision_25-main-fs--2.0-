@@ -56,20 +56,29 @@ int main(int argc, char * argv[])
     while (!quit) {
       auto target = target_queue.front();
       auto gs = gimbal.state();
-      auto plan = planner.plan(target, gs.bullet_speed);
+      auto plan = planner.plan(target, gs.bullet_speed, gs.yaw, gs.yaw_vel, gs.pitch);
 
       gimbal.send(
-        plan.control, plan.fire, plan.yaw, plan.yaw_vel, plan.yaw_acc, plan.target_pitch, 0.0F,
-        0.0F);
+        plan.control, plan.fire, plan.yaw, plan.yaw_vel, plan.yaw_acc, plan.pitch);
 
       auto fired = gs.bullet_count > last_bullet_count;
       last_bullet_count = gs.bullet_count;
 
       nlohmann::json data;
+      auto stats = gimbal.stats();
+
+      data["rx_frames"] = stats.rx_frames.load();
+      data["rx_checksum_err"] = stats.rx_checksum_err.load();
+      data["tx_frames"] = stats.tx_frames.load();
+      data["tx_errors"] = stats.tx_errors.load();
+      data["tx_dropped"] = stats.tx_dropped.load();
+      data["gimbal_alive"] = gimbal.is_gimbal_alive() ? 1 : 0;
+      data["gimbal_mode"] = static_cast<int>(gimbal.mode());
       data["t"] = tools::delta_time(std::chrono::steady_clock::now(), t0);
 
       data["gimbal_yaw"] = gs.yaw;
       data["gimbal_yaw_vel"] = gs.yaw_vel;
+      data["gimbal_yaw_acc"] = gs.yaw_acc;
       data["gimbal_pitch"] = gs.pitch;
       data["gimbal_pitch_vel"] = gs.pitch_vel;
 
@@ -138,8 +147,15 @@ int main(int argc, char * argv[])
 
     // 打印IMU数据（云台姿态和角速度）
     auto gs = gimbal.state();
-    SPDLOG_INFO("\rIMU: yaw={:.2f}° yaw_vel={:.2f}°/s pitch={:.2f}° pitch_vel={:.2f}°/s",
-                gs.yaw, gs.yaw_vel, gs.pitch, gs.pitch_vel);
+   constexpr double RAD_TO_DEG = 180.0 / CV_PI;
+
+SPDLOG_INFO(
+  "\rGimbal: yaw={:.2f}° yaw_vel={:.2f}°/s "
+  "pitch={:.2f}° pitch_vel={:.2f}°/s",
+  gs.yaw * RAD_TO_DEG,
+  gs.yaw_vel * RAD_TO_DEG,
+  gs.pitch * RAD_TO_DEG,
+  gs.pitch_vel * RAD_TO_DEG);
 
     cv::resize(img, img, {}, 0.5, 0.5);  // 显示时缩小图片尺寸
     cv::imshow("reprojection", img);
@@ -149,7 +165,7 @@ int main(int argc, char * argv[])
 
   quit = true;
   if (plan_thread.joinable()) plan_thread.join();
-  gimbal.send(false, false, 0, 0, 0, 0, 0, 0);
+  gimbal.send(false, false, 0, 0, 0, 0);
 
   return 0;
 }

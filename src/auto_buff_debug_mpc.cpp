@@ -73,8 +73,7 @@ int main(int argc, char * argv[])
     auto plan = aimer.mpc_aim(target_copy, t, gs, true);
 
     gimbal.send(
-      plan.control, plan.fire, plan.yaw, plan.yaw_vel, plan.yaw_acc, plan.pitch, plan.pitch_vel,
-      plan.pitch_acc);
+      plan.control, plan.fire, plan.yaw, plan.yaw_vel, plan.yaw_acc, plan.pitch);
     // -------------- 调试输出 --------------
 
     nlohmann::json data;
@@ -140,6 +139,7 @@ int main(int argc, char * argv[])
     data["gimbal_yaw"] = gs.yaw * 57.3;
     data["gimbal_pitch"] = gs.pitch * 57.3;
     data["gimbal_yaw_vel"] = gs.yaw_vel * 57.3;
+    data["gimbal_yaw_acc"] = gs.yaw_acc * 57.3;
     data["gimbal_pitch_vel"] = gs.pitch_vel * 57.3;
 
     if (plan.control) {

@@ -35,7 +35,7 @@ Gimbal::Gimbal(const std::string & config_path)
   }
 
   // 初始化状态
-  state_ = {0, 0, 0, 0, 25.0, 0};
+  state_ = {0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 25.0F, 0};
 
   // 初始化队列防止为空
   auto now = std::chrono::steady_clock::now();
@@ -104,8 +104,7 @@ Eigen::Quaterniond Gimbal::q(std::chrono::steady_clock::time_point t)
 }
 // 发送控制指令，控制云台转动
 void Gimbal::send(
-  bool control, bool fire, float yaw, float yaw_vel, float yaw_acc, float pitch, float pitch_vel,
-  float pitch_acc)
+  bool control, bool fire, float yaw, float yaw_vel, float yaw_acc, float pitch)
 {
   // 串口未连接时尝试自动重连
   if (!serial_.isOpen() || !serial_connected_) {
@@ -123,7 +122,7 @@ void Gimbal::send(
   last_send_time = now;
 
   std::vector<uint8_t> frame_gimbal;
-  frame_gimbal.reserve(4 + GIMBAL_PAYLOAD_LENGTH + 2);
+  frame_gimbal.reserve(4 + GIMBAL_COMMAND_PAYLOAD_LENGTH + 2);
 
   // 方案 B: 0=不控制，1=控制但不开火，2=控制并请求开火。
   const uint8_t control_mode = control ? (fire ? 2 : 1) : 0;
@@ -137,8 +136,6 @@ void Gimbal::send(
   const int32_t yaw_vel_int = to_milli_degrees(yaw_vel);
   const int32_t yaw_acc_int = to_milli_degrees(yaw_acc);
   const int32_t pitch_int = to_milli_degrees(pitch);
-  const int32_t pitch_vel_int = to_milli_degrees(pitch_vel);
-  const int32_t pitch_acc_int = to_milli_degrees(pitch_acc);
 
   // ==========================================
   // 3. 辅助函数
@@ -151,19 +148,17 @@ void Gimbal::send(
       frame.push_back((uval >> 24) & 0xFF);
   };
 
-  // 帧结构：FF 02 20 19 | mode + yaw/yaw_vel/yaw_acc + pitch/pitch_vel/pitch_acc | SC AC
+  // 帧结构：FF 02 20 11 | mode + yaw/yaw_vel/yaw_acc + pitch | SC AC
   frame_gimbal.push_back(HEAD_BYTE);
   frame_gimbal.push_back(DESTINATION_ADDRESS);
   frame_gimbal.push_back(ID_GIMBAL);
-  frame_gimbal.push_back(GIMBAL_PAYLOAD_LENGTH);
+  frame_gimbal.push_back(GIMBAL_COMMAND_PAYLOAD_LENGTH);
 
   frame_gimbal.push_back(control_mode);
   push_int32(frame_gimbal, yaw_int);
   push_int32(frame_gimbal, yaw_vel_int);
   push_int32(frame_gimbal, yaw_acc_int);
   push_int32(frame_gimbal, pitch_int);
-  push_int32(frame_gimbal, pitch_vel_int);
-  push_int32(frame_gimbal, pitch_acc_int);
 
   // 校验和 (Sum Check + Add Check)
   uint8_t sum_check = 0, add_check = 0;
@@ -301,15 +296,20 @@ void Gimbal::process_packet(uint8_t id, const std::vector<uint8_t>& data) {
     };
 
     if (id == ID_GIMBAL) {
-        if (data.size() < 12) return;
+        // mode + yaw + pitch + reserved[8] + yaw_vel + yaw_acc
+        if (data.size() < GIMBAL_FEEDBACK_PAYLOAD_LENGTH) return;
 
-        double yaw_deg = get_int32(1) / 1000.0;
-        double pitch_deg = get_int32(5) / 1000.0;
+        double yaw_deg = get_int32(FEEDBACK_YAW_OFFSET) / 1000.0;
+        double pitch_deg = get_int32(FEEDBACK_PITCH_OFFSET) / 1000.0;
+        double yaw_vel_deg = get_int32(FEEDBACK_YAW_VEL_OFFSET) / 1000.0;
+        double yaw_acc_deg = get_int32(FEEDBACK_YAW_ACC_OFFSET) / 1000.0;
 
         if (std::abs(yaw_deg) > 360.0 || std::abs(pitch_deg) > 180.0) return;
 
         double yaw_rad = yaw_deg * M_PI / 180.0;
         double pitch_rad = -pitch_deg * M_PI / 180.0;
+        double yaw_vel_rad = yaw_vel_deg * M_PI / 180.0;
+        double yaw_acc_rad = yaw_acc_deg * M_PI / 180.0;
         double roll_rad = 0;
 
         Eigen::AngleAxisd rollAngle(roll_rad, Eigen::Vector3d::UnitX());
@@ -321,7 +321,21 @@ void Gimbal::process_packet(uint8_t id, const std::vector<uint8_t>& data) {
 
         std::lock_guard<std::mutex> lock(mutex_);
         state_.yaw = static_cast<float>(yaw_rad);
+        state_.yaw_vel = static_cast<float>(yaw_vel_rad);
+        state_.yaw_acc = static_cast<float>(yaw_acc_rad);
         state_.pitch = static_cast<float>(pitch_rad);
+        state_.pitch_vel = 0.0F;
+
+        switch (data[0]) {
+          case 0: mode_ = GimbalMode::IDLE; break;
+          case 1: mode_ = GimbalMode::AUTO_AIM; break;
+          case 2: mode_ = GimbalMode::SMALL_BUFF; break;
+          case 3: mode_ = GimbalMode::BIG_BUFF; break;
+          default:
+            mode_ = GimbalMode::IDLE;
+            tools::logger()->warn("[Gimbal] Invalid feedback mode: {}", data[0]);
+            break;
+        }
 
         // 更新接收统计
         stats_.rx_frames++;

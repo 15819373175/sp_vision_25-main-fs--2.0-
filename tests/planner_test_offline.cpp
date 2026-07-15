@@ -54,6 +54,7 @@ int main(int argc, char * argv[])
     data["plan_pitch"] = plan.pitch;
     data["plan_pitch_vel"] = plan.pitch_vel;
     data["plan_pitch_acc"] = plan.pitch_acc;
+    data["fire"] = static_cast<int>(plan.fire);
 
     plotter.plot(data);
 

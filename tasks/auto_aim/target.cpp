@@ -50,23 +50,40 @@ Target::Target(
   ekf_ = tools::ExtendedKalmanFilter(x0, P0, x_add);  //初始化滤波器（预测量、预测量协方差）
 }
 
-Target::Target(double x, double vyaw, double radius, double h) : armor_num_(4)
+Target::Target(double x, double vyaw, double radius, double h)
+: name(ArmorName::one),
+  armor_type(ArmorType::small),
+  priority(ArmorPriority::first),
+  jumped(false),
+  last_id(0),
+  isinit(true),
+  armor_num_(4),
+  switch_count_(0),
+  update_count_(0),
+  is_switch_(false),
+  is_converged_(false),
+  t_(std::chrono::steady_clock::now())
 {
   Eigen::VectorXd x0(11);
+
+  // x vx y vy z vz angle angular_velocity radius delta_radius delta_height
+  // 位置：m，角度：rad，角速度：rad/s
   x0 << x, 0, 0, 0, 0, 0, 0, vyaw, radius, 0, h;
+
   Eigen::VectorXd P0_dig(11);
-  P0_dig << 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0;
+  P0_dig.setZero();
   Eigen::MatrixXd P0 = P0_dig.asDiagonal();
 
-  // 防止夹角求和出现异常值
-  auto x_add = [](const Eigen::VectorXd & a, const Eigen::VectorXd & b) -> Eigen::VectorXd {
+  auto x_add = [](const Eigen::VectorXd & a, const Eigen::VectorXd & b)
+    -> Eigen::VectorXd {
     Eigen::VectorXd c = a + b;
     c[6] = tools::limit_rad(c[6]);
     return c;
   };
 
-  ekf_ = tools::ExtendedKalmanFilter(x0, P0, x_add);  //初始化滤波器（预测量、预测量协方差）
+  ekf_ = tools::ExtendedKalmanFilter(x0, P0, x_add);
 }
+
 
 void Target::predict(std::chrono::steady_clock::time_point t)
 {

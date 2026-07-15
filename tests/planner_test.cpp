@@ -43,17 +43,17 @@ int main(int argc, char * argv[])
     target.predict(0.01);
 
     auto gs = gimbal.state();
-    auto plan = planner.plan(target, gs.bullet_speed);
+    auto plan = planner.plan(target, gs.bullet_speed, gs.yaw, gs.yaw_vel, gs.pitch);
 
     gimbal.send(
-      plan.control, plan.fire, plan.yaw, plan.yaw_vel, plan.yaw_acc, plan.pitch, plan.pitch_vel,
-      plan.pitch_acc);
+      plan.control, plan.fire, plan.yaw, plan.yaw_vel, plan.yaw_acc, plan.pitch);
 
     nlohmann::json data;
     data["t"] = tools::delta_time(std::chrono::steady_clock::now(), t0);
 
     data["gimbal_yaw"] = gs.yaw;
     data["gimbal_yaw_vel"] = gs.yaw_vel;
+    data["gimbal_yaw_acc"] = gs.yaw_acc;
     data["gimbal_pitch"] = gs.pitch;
     data["gimbal_pitch_vel"] = gs.pitch_vel;
 
@@ -73,7 +73,7 @@ int main(int argc, char * argv[])
     std::this_thread::sleep_for(10ms);
   }
 
-  gimbal.send(false, false, 0, 0, 0, 0, 0, 0);
+  gimbal.send(false, false, 0, 0, 0, 0);
 
   return 0;
 }
