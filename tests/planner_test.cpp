@@ -36,6 +36,7 @@ int main(int argc, char * argv[])
   io::Gimbal gimbal(config_path);
   auto_aim::Planner planner(config_path);
   auto_aim::Target target(d, w, 0.2, 0.1);
+  target.jumped = true;  // 模拟已识别过装甲板切换，覆盖跨帧选板状态机。
 
   auto t0 = std::chrono::steady_clock::now();
 
@@ -43,6 +44,7 @@ int main(int argc, char * argv[])
     target.predict(0.01);
 
     auto gs = gimbal.state();
+    // 反馈仅验证开火门控；规划输出仍由开环参考轨迹决定。
     auto plan = planner.plan(target, gs.bullet_speed, gs.yaw, gs.yaw_vel, gs.pitch);
 
     gimbal.send(
@@ -59,6 +61,7 @@ int main(int argc, char * argv[])
 
     data["target_yaw"] = plan.target_yaw;
     data["target_pitch"] = plan.target_pitch;
+    data["armor_id"] = planner.debug_armor_id;
 
     data["plan_yaw"] = plan.yaw;
     data["plan_yaw_vel"] = plan.yaw_vel;

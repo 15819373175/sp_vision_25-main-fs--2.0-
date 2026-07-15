@@ -56,6 +56,7 @@ int main(int argc, char * argv[])
     while (!quit) {
       auto target = target_queue.front();
       auto gs = gimbal.state();
+      // 实际云台状态只用于安全开火门控，不参与 MPC 初始状态。
       auto plan = planner.plan(target, gs.bullet_speed, gs.yaw, gs.yaw_vel, gs.pitch);
 
       gimbal.send(
@@ -84,6 +85,7 @@ int main(int argc, char * argv[])
 
       data["target_yaw"] = plan.target_yaw;
       data["target_pitch"] = plan.target_pitch;
+      data["armor_id"] = planner.debug_armor_id;
 
       data["plan_yaw"] = plan.yaw;
       data["plan_yaw_vel"] = plan.yaw_vel;

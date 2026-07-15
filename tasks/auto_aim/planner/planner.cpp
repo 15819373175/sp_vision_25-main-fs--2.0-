@@ -33,6 +33,8 @@ Planner::Planner(const std::string & config_path)
   decision_speed_ = tools::read<double>(yaml, "decision_speed");
   high_speed_delay_time_ = tools::read<double>(yaml, "high_speed_delay_time");
   low_speed_delay_time_ = tools::read<double>(yaml, "low_speed_delay_time");
+  comming_angle_ = tools::read<double>(yaml, "comming_angle") / 57.3;
+  leaving_angle_ = tools::read<double>(yaml, "leaving_angle") / 57.3;
 
   setup_yaw_solver(config_path);
   setup_pitch_solver(config_path);
@@ -44,7 +46,7 @@ Plan Planner::plan(Target target, double bullet_speed)
 }
 
 Plan Planner::plan_impl(
-  Target target, double bullet_speed, const std::optional<Eigen::Vector3d> & gimbal_feedback)
+  Target target, double bullet_speed, const std::optional<Eigen::Vector3d> & fire_feedback)
 {
   // 0. Check bullet speed
   if (bullet_speed < 10 || bullet_speed > 25) {
@@ -68,13 +70,18 @@ Plan Planner::plan_impl(
   double yaw0;
   Trajectory traj;
   try {
-    // 在当前瞄准时刻只选择一次装甲板；整个 MPC 预测区间都使用该 armor_id。
-    // 否则每个预测点重新选择最近装甲板，会在切换处制造不连续参考轨迹。
-    const int armor_id = nearest_armor_id(target);
+    // 每次求解只选择一次装甲板，但锁定状态跨求解周期保留，避免临界位置来回跳板。
+    const int armor_id = select_armor_id(target);
+    if (armor_id < 0) {
+      debug_armor_id = -1;
+      return {false};
+    }
+    debug_armor_id = armor_id;
     yaw0 = aim(target, bullet_speed, armor_id)(0);
     traj = get_trajectory(target, yaw0, bullet_speed, armor_id);
   } catch (const std::exception & e) {
-    tools::logger()->warn("Unsolvable target {:.2f}", bullet_speed);
+    debug_armor_id = -1;
+    tools::logger()->warn("Unable to plan target: {} (bullet_speed={:.2f})", e.what(), bullet_speed);
     return {false};
   }
 
@@ -82,26 +89,18 @@ Plan Planner::plan_impl(
   auto t0 = std::chrono::steady_clock::now();
 
   // 3. Solve yaw
+  // TinyMPC 在这里是开环轨迹求解器：x0 对应参考轨迹第 0 点，
+  // 求解后取 HALF_HORIZON 作为当前规划输出。真实云台反馈不参与 x0。
   Eigen::VectorXd x0(2);
-  if (gimbal_feedback.has_value()) {
-    // MPC yaw 状态使用真实云台角度和角速度，实现反馈闭环。
-    x0 << tools::limit_rad((*gimbal_feedback)[0] - yaw0), (*gimbal_feedback)[1];
-  } else {
-    x0 << traj(0, 0), traj(1, 0);
-  }
+  x0 << traj(0, 0), traj(1, 0);
   tiny_set_x0(yaw_solver_, x0);
 
   yaw_solver_->work->Xref = traj.block(0, 0, 2, HORIZON);
   int yaw_status = tiny_solve(yaw_solver_);
   bool yaw_ok = (yaw_status == 0) && (yaw_solver_->solution->solved == 1);
 
-  // 4. Solve pitch
-  if (gimbal_feedback.has_value()) {
-    // 反馈协议不提供 pitch_vel，使用实际 pitch 和零初始速度。
-    x0 << (*gimbal_feedback)[2], 0.0;
-  } else {
-    x0 << traj(2, 0), traj(3, 0);
-  }
+  // 4. Solve pitch。与 yaw 一样，从参考轨迹第 0 点开始规划。
+  x0 << traj(2, 0), traj(3, 0);
   tiny_set_x0(pitch_solver_, x0);
 
   pitch_solver_->work->Xref = traj.block(2, 0, 2, HORIZON);
@@ -185,13 +184,13 @@ Plan Planner::plan_impl(
     yaw_ok && pitch_ok && std::hypot(yaw_err, pitch_err) < fire_thresh_;
 
   bool feedback_ready = false;
-  if (gimbal_feedback.has_value()) {
+  if (fire_feedback.has_value()) {
     const double actual_yaw_err = std::abs(
-      tools::limit_rad(plan.target_yaw - (*gimbal_feedback)[0]));
+      tools::limit_rad(plan.target_yaw - (*fire_feedback)[0]));
     const double actual_pitch_err = std::abs(
-      plan.target_pitch - (*gimbal_feedback)[2]);
+      plan.target_pitch - (*fire_feedback)[2]);
     const double actual_yaw_vel_err = std::abs(
-      traj(1, HALF_HORIZON) - (*gimbal_feedback)[1]);
+      traj(1, HALF_HORIZON) - (*fire_feedback)[1]);
 
     feedback_ready =
       actual_yaw_err < fire_yaw_feedback_thresh_ &&
@@ -207,7 +206,10 @@ Plan Planner::plan_impl(
 
 Plan Planner::plan(std::optional<Target> target, double bullet_speed)
 {
-  if (!target.has_value()) return {false};
+  if (!target.has_value()) {
+    reset_armor_lock();
+    return {false};
+  }
 
   double delay_time =
     std::abs(target->ekf_x()[7]) > decision_speed_ ? high_speed_delay_time_ : low_speed_delay_time_;
@@ -223,15 +225,18 @@ Plan Planner::plan(
   Target target, double bullet_speed, float current_yaw, float current_yaw_vel,
   float current_pitch)
 {
-  const Eigen::Vector3d gimbal_feedback(current_yaw, current_yaw_vel, current_pitch);
-  return plan_impl(target, bullet_speed, gimbal_feedback);
+  const Eigen::Vector3d fire_feedback(current_yaw, current_yaw_vel, current_pitch);
+  return plan_impl(target, bullet_speed, fire_feedback);
 }
 
 Plan Planner::plan(
   std::optional<Target> target, double bullet_speed, float current_yaw, float current_yaw_vel,
   float current_pitch)
 {
-  if (!target.has_value()) return {false};
+  if (!target.has_value()) {
+    reset_armor_lock();
+    return {false};
+  }
 
   double delay_time =
     std::abs(target->ekf_x()[7]) > decision_speed_ ? high_speed_delay_time_ : low_speed_delay_time_;
@@ -260,7 +265,10 @@ Plan Planner::plan(Target target, double bullet_speed, float current_yaw, float 
 
 Plan Planner::plan(std::optional<Target> target, double bullet_speed, float current_yaw, float current_pitch)
 {
-  if (!target.has_value()) return {false};
+  if (!target.has_value()) {
+    reset_armor_lock();
+    return {false};
+  }
 
   double delay_time =
     std::abs(target->ekf_x()[7]) > decision_speed_ ? high_speed_delay_time_ : low_speed_delay_time_;
@@ -325,22 +333,111 @@ void Planner::setup_pitch_solver(const std::string & config_path)
   pitch_solver_->settings->max_iter = 30;
 }
 
-int Planner::nearest_armor_id(const Target & target) const
+void Planner::reset_armor_lock()
 {
+  locked_armor_id_ = -1;
+  locked_target_name_.reset();
+  locked_armor_count_ = 0;
+  debug_armor_id = -1;
+}
+
+int Planner::select_armor_id(const Target & target)
+{
+  constexpr double normal_visible_angle = 60.0 / 57.3;
+  constexpr double spin_speed_threshold = 2.0;
+
   const auto armors = target.armor_xyza_list();
   if (armors.empty()) throw std::runtime_error("Target has no armor");
 
-  int nearest_id = 0;
-  double min_dist = armors.front().head<2>().norm();
-  for (int i = 1; i < static_cast<int>(armors.size()); ++i) {
-    const double dist = armors[i].head<2>().norm();
-    if (dist < min_dist) {
-      min_dist = dist;
-      nearest_id = i;
+  // 切换到另一辆车或装甲板数量改变时，旧锁定编号不再可信。
+  if (
+    !locked_target_name_.has_value() || locked_target_name_.value() != target.name ||
+    locked_armor_count_ != armors.size()) {
+    reset_armor_lock();
+    locked_target_name_ = target.name;
+    locked_armor_count_ = armors.size();
+  }
+
+  // EKF 尚未识别过装甲板跳变时，只有 0 号板来自真实观测，其余板是几何外推。
+  if (!target.jumped) {
+    locked_armor_id_ = 0;
+    return locked_armor_id_;
+  }
+
+  const auto x = target.ekf_x();
+  const double center_yaw = std::atan2(x[2], x[0]);
+  const double angular_velocity = x[7];
+
+  std::vector<double> delta_angles;
+  delta_angles.reserve(armors.size());
+  for (const auto & armor : armors) {
+    delta_angles.push_back(tools::limit_rad(armor[3] - center_yaw));
+  }
+
+  auto lock_is_valid = [&]() {
+    return locked_armor_id_ >= 0 &&
+           locked_armor_id_ < static_cast<int>(armors.size());
+  };
+
+  // 普通跟随：在正面 ±60° 可射击区内持续锁定同一块板，直到它真正离开窗口。
+  // 这避免两块板都接近 45° 时因 EKF 噪声反复切换。
+  const bool directional_spin =
+    std::abs(angular_velocity) > spin_speed_threshold || target.name == ArmorName::outpost;
+  if (!directional_spin || std::abs(angular_velocity) < 1e-3) {
+    if (lock_is_valid() && std::abs(delta_angles[locked_armor_id_]) <= normal_visible_angle) {
+      return locked_armor_id_;
+    }
+
+    int best_id = -1;
+    double best_angle = 1e10;
+    for (int i = 0; i < static_cast<int>(armors.size()); ++i) {
+      const double abs_angle = std::abs(delta_angles[i]);
+      if (abs_angle <= normal_visible_angle && abs_angle < best_angle) {
+        best_angle = abs_angle;
+        best_id = i;
+      }
+    }
+
+    if (best_id < 0) return -1;
+    locked_armor_id_ = best_id;
+    return locked_armor_id_;
+  }
+
+  // 高速旋转：正转时装甲板从 -coming 进入，到 +leaving 离开；反转时镜像。
+  // coming > leaving 形成方向相关的进出角迟滞，锁定板未越过离开边界前不切换。
+  double coming_angle = comming_angle_;
+  double leaving_angle = leaving_angle_;
+  if (target.name == ArmorName::outpost) {
+    coming_angle = 70.0 / 57.3;
+    leaving_angle = 30.0 / 57.3;
+  }
+
+  auto in_directional_window = [&](int id) {
+    const double delta = delta_angles[id];
+    if (angular_velocity > 0) {
+      return delta >= -coming_angle && delta <= leaving_angle;
+    }
+    return delta >= -leaving_angle && delta <= coming_angle;
+  };
+
+  if (lock_is_valid() && in_directional_window(locked_armor_id_)) {
+    return locked_armor_id_;
+  }
+
+  int best_id = -1;
+  double best_angle = 1e10;
+  for (int i = 0; i < static_cast<int>(armors.size()); ++i) {
+    if (!in_directional_window(i)) continue;
+    const double abs_angle = std::abs(delta_angles[i]);
+    if (abs_angle < best_angle) {
+      best_angle = abs_angle;
+      best_id = i;
     }
   }
 
-  return nearest_id;
+  if (best_id < 0) return -1;
+  locked_armor_id_ = best_id;
+  return locked_armor_id_;
 }
 
 Eigen::Matrix<double, 2, 1> Planner::aim(

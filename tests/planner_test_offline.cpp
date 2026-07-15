@@ -33,6 +33,7 @@ int main(int argc, char * argv[])
 
   auto_aim::Planner planner(config_path);
   auto_aim::Target target(d, w, 0.2, 0.1);
+  target.jumped = true;  // 模拟已识别过装甲板切换，覆盖跨帧选板状态机。
 
   auto t0 = std::chrono::steady_clock::now();
 
@@ -46,6 +47,7 @@ int main(int argc, char * argv[])
 
     data["target_yaw"] = plan.target_yaw;
     data["target_pitch"] = plan.target_pitch;
+    data["armor_id"] = planner.debug_armor_id;
 
     data["plan_yaw"] = plan.yaw;
     data["plan_yaw_vel"] = plan.yaw_vel;

@@ -2,6 +2,7 @@
 #define AUTO_AIM__PLANNER_HPP
 
 #include <Eigen/Dense>
+#include <cstddef>
 #include <list>
 #include <optional>
 
@@ -36,10 +37,12 @@ class Planner
 {
 public:
   Eigen::Vector4d debug_xyza;
+  int debug_armor_id = -1;
   Planner(const std::string & config_path);
 
   Plan plan(Target target, double bullet_speed);
   Plan plan(std::optional<Target> target, double bullet_speed);
+  // 云台反馈只用于最终开火门控，不参与 MPC 轨迹求解。
   Plan plan(
     Target target, double bullet_speed, float current_yaw, float current_yaw_vel,
     float current_pitch);
@@ -62,6 +65,12 @@ private:
   double fire_pitch_feedback_thresh_;
   double fire_yaw_vel_feedback_thresh_;
   double low_speed_delay_time_, high_speed_delay_time_, decision_speed_;
+  double comming_angle_, leaving_angle_;
+
+  // 跨帧装甲板锁定。armor_xyza_list() 的下标对应 Target EKF 中稳定的物理装甲板编号。
+  int locked_armor_id_ = -1;
+  std::optional<ArmorName> locked_target_name_;
+  std::size_t locked_armor_count_ = 0;
 
   TinySolver * yaw_solver_;
   TinySolver * pitch_solver_;
@@ -72,14 +81,14 @@ private:
   int64_t solve_time_us_ = 0;
 
   Plan plan_impl(
-    Target target, double bullet_speed, const std::optional<Eigen::Vector3d> & gimbal_feedback);
+    Target target, double bullet_speed, const std::optional<Eigen::Vector3d> & fire_feedback);
 
   void setup_yaw_solver(const std::string & config_path);
   void setup_pitch_solver(const std::string & config_path);
 
-  // 一次 MPC 预测周期内固定同一块装甲板，避免“最近装甲板”切换
-  // 导致参考 yaw、yaw_vel 和 yaw_acc 出现周期性尖峰。
-  int nearest_armor_id(const Target & target) const;
+  // DH 式有状态选板：普通跟随使用跨帧锁定，高速旋转使用带方向的进出角迟滞。
+  int select_armor_id(const Target & target);
+  void reset_armor_lock();
   Eigen::Matrix<double, 2, 1> aim(
     const Target & target, double bullet_speed, int armor_id);
   Trajectory get_trajectory(

@@ -75,6 +75,7 @@ int main(int argc, char * argv[])
       if (!target_queue.empty() && mode == io::GimbalMode::AUTO_AIM) {
         auto target = target_queue.front();
         auto gs = gimbal.state();
+        // 实际云台状态只用于安全开火门控；MPC 本身保持开环中心点轨迹规划。
         auto plan = planner.plan(target, gs.bullet_speed, gs.yaw, gs.yaw_vel, gs.pitch);
 
         // 下位机离线时强制停止控制

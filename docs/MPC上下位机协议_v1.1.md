@@ -60,11 +60,12 @@ HEAD | D_ADDR | ID | LEN | Payload | SC | AC
 
 两个方向的 `mode=2` 含义不同：反馈方向表示 `SMALL_BUFF`，控制方向表示请求开火。
 
-## MPC 闭环使用
+## MPC 轨迹规划与反馈用途
 
-- yaw MPC 初始状态使用实际反馈 `yaw/yaw_vel`。
-- pitch MPC 初始状态使用实际反馈 `pitch`；由于不反馈 `pitch_vel`，初始速度使用 `0`。
-- `yaw_acc` 作为实际反馈用于记录和联调，目前不作为 MPC 初始状态。
+- TinyMPC 作为开环轨迹求解器，yaw/pitch 初始状态均使用参考轨迹第 `0` 点，不使用云台实际反馈。
+- 上位机下发预测区间中心 `HALF_HORIZON` 处的 `plan.yaw/yaw_vel/yaw_acc/pitch`。
+- 实际反馈 `yaw/yaw_vel/pitch` 只用于记录、联调和最终开火门控，由下位机角度环与速度环负责真实云台闭环。
+- `yaw_acc` 作为实际反馈用于记录和联调，不参与 MPC 初始状态。
 - 上位机下发 `plan.pitch`，即 MPC 求解后的 pitch，而不是原始 `target_pitch`。
 - 超过 `100 ms` 未收到有效反馈时，上位机取消控制和开火请求。
 
